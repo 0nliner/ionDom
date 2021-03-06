@@ -4,18 +4,25 @@ $white: white;
 
 #right_nav {
   position: fixed;
+  left: 0;
+
   height: 100vh;
-  width: 285px;
+  width: 485px;
 
   overflow-y: scroll;
 
   color: $white;
   background: $blue;
 
+  transition: 1s;
+
+
   .content {
     // контент элемента
     position: relative;
-    right: 0;
+    //right: 0;
+    width: 333px;
+    float: right;
 
     @mixin block {
       display: flex;
@@ -28,6 +35,8 @@ $white: white;
     }
 
     .dropdown_block {
+      margin-top: 25px;
+
       .dropdown {
         // дропдаун в компоненте
 
