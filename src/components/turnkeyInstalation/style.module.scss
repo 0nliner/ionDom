@@ -1,0 +1,48 @@
+
+
+.headtext {
+    font-family: Roboto-Bold;
+    font-size: 30px;
+    color: #224156;
+    margin-bottom: 32px;
+    max-width: 689px;
+}
+
+.cardSpace {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 12px;
+
+    max-width: 894px;
+
+
+    .card {
+        display: flex;
+        align-items: flex-end;
+        width: 290px;
+        height: 200px;
+    
+        font-family: Roboto-Regular;
+        font-size: 15px;
+        line-height: 135.69%;
+
+        
+        .cardText {
+            text-align: center;
+            width: 115px;
+            background: #23252F;
+            color: #fff;
+        }
+    }
+}
+
+
+
+@media (max-width: 906px) {
+    .cardSpace {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        max-width: 580px;
+    }
+}
