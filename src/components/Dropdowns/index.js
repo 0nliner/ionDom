@@ -55,7 +55,9 @@ function DropdownBlock (props) {
 
     return (
         <div className={"dropdown_block"}>
-            <Dropdown title={props.title}  onClick={() => setDisplayInnerContent(!displayInnerContent)}/>
+            <Dropdown title={props.title}
+                      state={displayInnerContent}
+                      onClick={() => setDisplayInnerContent(!displayInnerContent)}/>
 
             <DropdownContent show={displayInnerContent}>
                 {props.children}

@@ -84,6 +84,10 @@
 
   .arrow_wrapper {
     position: relative;
+
+    display: grid;
+    place-content: center;
+
     width: 40px;
     height: 40px;
     right: 0;
