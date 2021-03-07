@@ -83,14 +83,14 @@
   position: relative;
 
   .arrow_wrapper {
-    position: relative;
+    position: absolute;
 
     display: grid;
     place-content: center;
 
     width: 40px;
     height: 40px;
-    right: 0;
+    right: 20px;
   }
 }
 

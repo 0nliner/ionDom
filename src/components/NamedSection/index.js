@@ -1,5 +1,5 @@
 import react from "react";
-import "style.scss";
+import "./style.scss";
 
 
 function NamedSection (props) {
@@ -7,9 +7,9 @@ function NamedSection (props) {
     // props.children
 
     return (
-        <div>
+        <div class={"named_section"}>
             <h2>
-                {props.text}
+                {props.title}
             </h2>
             {props.children}
         </div>
