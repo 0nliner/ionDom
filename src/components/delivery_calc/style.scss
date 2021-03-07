@@ -1,0 +1,176 @@
+$text_color: #253B49;
+
+
+.delivery_calc {
+  width: 100%;
+
+  background: #FFFFFF;
+  border: 1px solid rgba(35, 37, 47, 0.13);
+  box-sizing: border-box;
+  box-shadow: 0 7px 22px 2px rgba(31, 95, 191, 0.28);
+  border-radius: 7px;
+
+
+  .content_block_wrapper {
+    width: 100%;
+    border-bottom: 1px solid slategray;
+
+    .content_block {
+      display: flex;
+      flex-direction: column;
+
+      width: calc(100% - 30px);
+      margin: 20px auto 10px;
+
+      h3 {
+        width: 100%;
+        margin-bottom: 10px;
+        text-align: left;
+      }
+
+      .content {
+        width: 100%;
+
+      }
+    }
+  }
+}
+
+.namedCheckBox {
+  display: flex;
+  place-items: center;
+  position: relative;
+
+  .title {
+    color: $text_color;
+  }
+
+  .title::before {
+    content: "* ";
+  }
+
+  .checkPointWrapper {
+    position: relative;
+    left: 5px;
+  }
+}
+
+
+.services {
+  h3 {
+    color: #E97D27;
+  }
+
+  display: flex;
+  justify-content: space-between;
+
+  .checkpoints {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+
+.checkPoint {
+  height: 20px;
+  width: 20px;
+
+  border: 1px solid #224156;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+
+
+.special {
+
+  .col1 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .col1 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+
+
+
+@mixin block {
+  display: flex;
+  place-items: center;
+
+  height: 30px;
+  width: calc(100% - 15px);
+
+  padding-left: 15px;
+}
+
+
+.dropdown_content {
+  border-radius: 10px;
+
+  .selectable {
+    background-color: #1FBF4C;
+    color: #FFFFFF;
+  }
+}
+
+
+.special {
+  .content {
+    display: flex;
+
+    .col1 {
+      width: 50%;
+    }
+
+    .col2 {
+      width: calc(50% - 20px);
+      margin-left: 20px;
+
+      .namedCheckBox {
+        margin-top: 15px;
+      }
+    }
+
+
+  }
+
+  h3 {
+    color: #1FBF4C;
+    text-align: left;
+  }
+}
+
+.cams {
+  h3 {
+    color: #6F1FBF;
+  }
+
+  .InlineInputChange {
+    display: flex;
+    margin-top: 12px;
+
+    .title {
+      margin-right: 15px;
+    }
+
+    .inputWrapper {
+      border-bottom: 1px solid black;
+
+      input {
+        width: calc(100% - 10px);
+        margin: 0 auto;
+        text-align: center;
+
+        border: none;
+        color: #6f1fbf;
+      }
+
+    }
+  }
+}

@@ -1,0 +1,667 @@
+<!--главная страница; пример работы-->
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>главная</title>
+        <link rel="stylesheet" href="style/base.css">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf8"/>
+    </head>
+    <body>
+        <header id="header_desktop">
+            <!--обёртка для выравнивания содержимого по центру-->
+            <!--логотип-->
+            <img alt="фотография не загружена" id="header_logo" src="./static/icons/Group%2096.svg">
+            <div class="wrapper">
+                <!--верхняя строка-->
+                <div id="top_bar">
+                    <!-- для адаптивности -->
+                    <img alt="фотография не загружена" id="header_logo_top_bar" src="./static/icons/Group%2096.svg">
+                    <!--Кнопка "магазин"-->
+                    <div id="market_button">
+                        <div class="menu_bar_container">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        Магазин
+                    </div>
+                    <!--поисковая строка-->
+                    <div id="search_container">
+                        <input id="search_field" placeholder="Что ищем ?" alt="иконка поиска">
+                        <button id="search_btn">Найти</button>
+                    </div>
+                    <!--корзинка-->
+                    <div class="basket_container">
+                        <img alt="фотография не загружена" class="basket" src="./static/icons/Vector%2020.svg"/>
+                        <div class="quantity_of_items">100</div>
+                    </div>
+
+                </div>
+                <nav>
+                    <a href="#">Умный дом</a> |
+                    <a href="#">Системы безопасности</a> |
+                    <a href="#">Интернет</a> |
+                    <a href="#">Акции и скидки</a> |
+                    <a href="#">Услуги и цены</a> |
+                    <a href="#">Контакты</a> |
+                    <a id="phone_number">
+                        <!--иконка телефона-->
+                        <img src="./static/icons/phone.svg" alt="фотография не загружена">
+                        <span>
+                            <i>
+                                8-499-444-33-54 (с 8 до 20)
+                            </i>
+                        </span>
+                    </a>
+                </nav>
+            </div>
+
+        </header>
+
+        <header id="header_mobile">
+            <div class="top_bar">
+
+                <div class="left">
+                    <div class="menu" onclick="manipulateHeaderMenu('site_menu')">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+
+                <div class="middle">
+                    <img alt="фотография не загрузилась" id="mobile_header_logo" src="./static/icons/Group%2096.svg">
+                </div>
+
+                <div class="right">
+                    <div id="search_button_mobile">
+                        <img alt="фотография не загрузилась" src="static/icons/search.svg"/>
+                    </div>
+                    <!--корзинка-->
+                    <div class="basket_container">
+                        <img alt="фотография не загрузилась" class="basket" src="./static/icons/Vector%2020.svg"/>
+                        <div class="quantity_of_items">100</div>
+                    </div>
+
+                </div>
+            </div>
+            <nav>
+                <div class="menu_bar_container">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                Магазин
+            </nav>
+            <div class="site_menu" id="site_menu">
+                <div class="row">
+                    <img src="./static/icons/Arrow%2015.svg" alt="back" style="margin-right:10px">
+                    <h3 class="selected">Системы безопасности</h3>
+                </div>
+
+                <div class="row">
+                    <h3>Системы видеонаблюдения</h3>
+                </div>
+
+                <div class="row">
+                    <h3>СКУД Домофоны Шлагбаум</h3>
+                </div>
+
+                <div class="row">
+                    <h3>Системы охранной сигнализации</h3>
+                </div>
+
+                <div class="row">
+                    <h3>Системы пожарной безопасности</h3>
+                </div>
+
+            </div>
+        </header>
+
+
+
+        <div id="content_block">
+            <!-- блок с УТП -->
+            <div id="utp_container">
+                <h1>Уникальное торговое<br>предложение</h1>
+                <span>
+                    При помощи систем управления можно контролировать и<br>
+                    регулировать каждый источник света в помещении
+                    <br>
+                    <button id="projects_btn">
+                        Проекты
+                    </button>
+                </span>
+            </div>
+        </div>
+
+        <!-- карточки под УТП -->
+        <div id="content_block_1">
+            <div class="row" id="row_1">
+
+                <div class="card" id="video_surveillance_system">
+                    <div class="card_wrapper">
+                        <img alt="фотография не загружена" src="./static/icons/Vector.svg"/>
+                        <h2 class="title">
+                            система<br>видеонаблюдения
+                        </h2>
+                    </div>
+                    <h3>
+                        Установка видеонаблюдения
+                    </h3>
+                </div>
+
+                <div class="card" id="internet_and_telephony">
+                    <div class="card_wrapper">
+                        <img alt="фотография не загружена" src="./static/icons/Vector-1.svg"/>
+                        <h2 class="title">
+                            интернет и телефония<br>усилители связи
+                        </h2>
+                    </div>
+                    <h3>
+                        Установка интернета на дачу
+                    </h3>
+                </div>
+
+                <div class="card" id="smart_house">
+                    <div class="card_wrapper">
+                        <img alt="фотография не загружена" src="./static/icons/noun_home automation_3256997 1.svg"/>
+                        <h2 class="title">
+                            умный дом
+                        </h2>
+                    </div>
+                    <h3>
+                        Установка умного дома
+                    </h3>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <h2 class="big_h">
+                    Интернет-магазин
+                </h2>
+            </div>
+
+            <div class="row" id="row_2">
+                <div class="card" id="cams_card">
+                    <img alt="фотография не загружена" src="static/images/image%2027.png"/>
+                    <div class="title">
+                        Видеонаблюдение
+                    </div>
+
+                    <div class="row">
+                        <button>
+                            Все комплекты
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card" id="internet_card">
+                    <img alt="фотография не загружена" src="static/images/image%2028.png"/>
+                    <div class="title">
+                        Интернет
+                    </div>
+
+                    <div class="row">
+                        <button>
+                            Все комплекты
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card" id="smart_house_card">
+                    <img alt="фотография не загружена" src="static/images/image%2029.png"/>
+                    <div class="title">
+                        Интернет
+                    </div>
+
+                    <div class="row">
+                        <button>
+                            Все комплекты
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+        <!-- блок с историей компании -->
+        <div id="content_block_2">
+            <div class="row">
+                <h2 class="big_h">
+                    О компании
+                </h2>
+            </div>
+
+            <div id="company_history">
+                <div>
+                    <span class="big_h">История компании</span>
+                    <br>
+                    <br>
+                    <span>
+                        душещипательная история, которая подойдёт для сюжета книги
+                    </span>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- наша миссия -->
+        <div id="content_block_3">
+            <div class="wrapper">
+                <img alt="фотография не загружена" id="our_mission_image" src="./static/images/6913%201.png"/>
+                <div id="our_mission">
+                    <span id="our_mission_title">наша миссия</span>
+                    <span id="about_our_mission">
+                        о нашей миссии
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <!-- продукт и сервис -->
+        <div id="content_block_5">
+
+            <div id="product_and_service_desktop">
+                <span class="big_h">Продукт и сервис</span>
+                <br>
+                <br>
+                <span>
+                    мега сервис! а теперь гони бабло
+                </span>
+            </div>
+            <div id="content_block_5_img_wrapper">
+                <img alt="фотография не загружена" src="static/images/Group%20144.png">
+            </div>
+        </div>
+
+        <div id="content_block_5_mobile">
+            <span class="big_h row">Продукт и сервис</span>
+            <br>
+            <br>
+            <div class="row">
+                    мега сервис! а теперь гони бабло
+            </div>
+        </div>
+
+        <!-- наши преимущества-->
+        <div id="content_block_6">
+            <div class="row">
+                <span class="big_h">Наши преимущества</span>
+            </div>
+            <div class="row" id="advantages">
+                    <div class="card">
+                        <img alt="фотография не загружена" src="./static/icons/Component%202.svg"/>
+                        <span class="title">Иновации</span>
+                    </div>
+
+                    <div class="card">
+                        <img alt="фотография не загружена" src="./static/icons/Component%201.svg"/>
+                        <span class="title">Прозрачность</span>
+                    </div>
+
+                    <div class="card">
+                        <img alt="фотография не загружена" src="./static/icons/Component%203.svg"/>
+                        <span class="title">Качество</span>
+                    </div>
+
+                    <div class="card">
+                        <img alt="фотография не загружена" src="./static/icons/Component%204.svg"/>
+                        <span class="title">Равноправность</span>
+                    </div>
+            </div>
+        </div>
+
+        <!-- блог -->
+        <div id="content_block_7">
+            <div class="wrapper">
+                <span class="title big_h">Блог</span>
+
+                <div class="cards">
+                    <div class="arrows">
+                        <!-- стрелка влево -->
+                        <div class="circle left_arrow">
+                            <img src="static/icons/Arrow%2015.svg" alt="стрелка влево">
+                        </div>
+                        <!-- стрелка вправо -->
+                        <div class="circle right_arrow">
+                            <img src="static/icons/Arrow%2016.svg" alt="стрелка вправо">
+                        </div>
+                    </div>
+                    <div class="card_template">
+                        <img alt="фотография не загружена" src="./static/images/image%2075.png"/>
+                        <div class="content">
+                            <div class="row">
+                                <span class="title">название статьи</span>
+                            </div>
+
+                            <div class="row">
+                                <div class="description">
+                                    краткое описание статьи
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <button class="read_text">
+                                Читать далее
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- наши партнёры -->
+        <div id="content_block_8">
+            <div class="big_h row">
+                Наши партнёры
+            </div>
+            <div class="wrapper row">
+                    <div>
+                        <img alt="фотография не загружена" src="static/images/partners/image%2096.png"/>
+                    </div>
+                    <div>
+                        <img alt="фотография не загружена" src="static/images/partners/image%2097.png"/>
+                    </div>
+                    <div>
+                        <img alt="фотография не загружена" src="static/images/partners/image%20101.png"/>
+                    </div>
+                    <div>
+                        <img alt="фотография не загружена" src="static/images/partners/image%20102.png"/>
+                    </div>
+                    <div>
+                        <img alt="фотография не загружена" src="static/images/partners/image%20103.png"/>
+                    </div>
+                    <div>
+                        <img alt="фотография не загружена" src="static/images/partners/image%20104.png"/>
+                </div>
+            </div>
+        </div>
+
+        <div id="content_block_9">
+            <div class="top_bar">
+                <div class="title">Выполненые работы</div>
+                <div id="gallery_nav">
+                    <!-- показать все работы -->
+                    <div id="show_all">
+                        Показать все >
+                    </div>
+                    <div id="arrows">
+                        <img alt="фотография не загружена" src="static/icons/Arrow%2015.svg"/>
+                        <img alt="фотография не загружена" src="static/icons/Arrow%2016.svg"/>
+                    </div>
+                </div>
+            </div>
+            <div class="cards row">
+
+                <div class="card_template">
+                    <img alt="фотография не загружена" src="./static/images/image%2075.png"/>
+                    <div class="row">
+                        <span class="title">название статьи</span>
+                    </div>
+
+                    <div class="row">
+                        <div class="description">
+                            краткое описание статьи
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <button class="read_text">
+                            Читать далее
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card_template">
+                    <img alt="фотография не загружена" src="./static/images/image%2075.png"/>
+                    <div class="row">
+                        <span class="title">название статьи</span>
+                    </div>
+
+                    <div class="row">
+                        <div class="description">
+                            краткое описание статьи
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <button class="read_text">
+                            Читать далее
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card_template">
+                    <img alt="фотография не загружена" src="./static/images/image%2075.png"/>
+                    <div class="row">
+                        <span class="title">название статьи</span>
+                    </div>
+
+                    <div class="row">
+                        <div class="description">
+                            краткое описание статьи
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <button class="read_text">
+                            Читать далее
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card_template">
+                    <img alt="фотография не загружена" src="./static/images/image%2075.png"/>
+                    <div class="row">
+                        <span class="title">название статьи</span>
+                    </div>
+
+                    <div class="row">
+                        <div class="description">
+                            краткое описание статьи
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <button class="read_text">
+                            Читать далее
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <footer>
+            <div class="wrapper">
+                <img id="footer_logo" alt="фотография не загружена" src="static/icons/Group%20145.svg">
+                <div class="cols">
+                    <div class="col" id="services">
+                        <div class="top_bar"  onclick="manipulateContentFooter('services')">
+                            <h2>Услуги</h2>
+                            <img class="arrow" alt="стрелка вниз" src="./static/icons/Arrow%2040.svg"/>
+                        </div>
+
+                        <div class="content">
+                            demo content
+                            <div>privet</div>
+                        </div>
+                    </div>
+
+                    <div class="col" id="products">
+                        <div class="top_bar" onclick="manipulateContentFooter('products')">
+                            <h2>Товары</h2>
+                            <img class="arrow" alt="стрелка вниз" src="./static/icons/Arrow%2040.svg"/>
+                        </div>
+
+                        <div class="content">
+                            demo content
+                            <div>privet</div>
+                        </div>
+                    </div>
+
+                    <div class="col" id="menu">
+                        <div class="top_bar"  onclick="manipulateContentFooter('menu')">
+                            <h2>Меню</h2>
+                            <img class="arrow" alt="стрелка вниз" src="./static/icons/Arrow%2040.svg"/>
+                        </div>
+                        <div class="content">
+                            demo content
+                            <div>privet</div>
+                        </div>
+                    </div>
+
+                    <div class="col" id="contacts">
+                        <h2>Наши контакты</h2>
+                        <div id="social_networks">
+                            <img alt="фотография не загружена" src="static/icons/carbon_logo-instagram.svg"/>
+                            <img alt="фотография не загружена" src="static/icons/cib_telegram-plane.svg"/>
+                            <img alt="фотография не загружена" src="static/icons/la_whatsapp.svg"/>
+                            <img alt="фотография не загружена" src="static/icons/bx_bxl-vk.svg"/>
+                        </div>
+                    </div>
+
+
+                    <div class="col" id="notification">
+                        <label id="sub" style="font-size: 26px;
+                                               margin-top:40px;
+                                               text-align: center">
+                            Будь всегда в курсе
+                        </label>
+
+                        <div id="notification_subscription">
+                            <input for="sub" placeholder="Ваш Email"/>
+                            <img alt="фотография не загружена" src="static/icons/Component%205.svg"/>
+                        </div>
+                    </div>
+
+
+            </div>
+            </div>
+        </footer>
+    </body>
+    <script>
+
+        const create_template_card = (img_src, title, description) => {
+            // создаёт объект card_template
+            let new_card = document.createElement("div");
+            new_card.innerHTML = "<div class=\"card_template\">\n" +
+                `                        <img alt=\"фотография не загружена\" src="${img_src}"/>\n` +
+                "                        <div class=\"row\">\n" +
+                `                            <span class=\"title\">${title}</span>\n` +
+                "                        </div>\n" +
+                "\n" +
+                "                        <div class=\"row\">\n" +
+                "                            <div class=\"description\">\n" +
+                `                                ${description}\n` +
+                "                            </div>\n" +
+                "\n" +
+                "                        </div>\n" +
+                "                        <div class=\"row\">\n" +
+                "                            <button class=\"read_text\">\n" +
+                "                                Читать далее\n" +
+                "                            </button>\n" +
+                "                        </div>\n" +
+                "                    </div>";
+
+            return new_card.children[0];
+        }
+
+        // зная, что кто-то будет делать fetch запрос на сервер, содержимое
+        // блоков "блог" и примеры "работ" генерируется на основе данных
+        // массивов blog_data и our_works_data соответственно, где каждый элемент
+        // представлен в виде json
+
+        // пример JSON
+        // {img_src: <строка, путь до изображения>,
+        // title: <строка, title карточки>,
+        // description: <строка, краткое описание карточки> }
+        let blog_data = [
+            // {
+            //     img_src: "./static/icons/Arrow%2015.svg",
+            //     title: "title",
+            //     description: "test description"
+            // }
+        ];
+        let our_works_data = [];
+        // TODO: тут должен находиться код получения данных с сервера
+        // либо же напишите этот момент самостоятельно на основе
+
+
+
+
+        // тут происходит генерация компонентов блога
+        let blog_cards_holder = document.querySelector("#content_block_7").querySelector(".cards");
+
+        for (let blog_data_unit of blog_data) {
+            let new_card = create_template_card(blog_data_unit.img_src,
+                                                blog_data_unit.title,
+                                                blog_data_unit.description
+            )
+            // добавим новую карточку в DOM дерево
+            blog_cards_holder.appendChild(new_card);
+        }
+
+        // генерация компонентов "наши работы"
+        let our_works_cards_holder = document.querySelector("#content_block_7").querySelector(".cards");
+
+        for (let our_works_data_unit of our_works_data) {
+            let new_card = create_template_card(our_works_data_unit.img_src,
+                our_works_data_unit.title,
+                our_works_data_unit.description
+            )
+            // добавим новую карточку в DOM дерево
+            our_works_cards_holder.appendChild(new_card);
+        }
+
+        const manipulateContentFooter = (id) => {
+            // закрывает и открывает содержимое блока с
+            // контентом в footer при нажатии на
+            // соответствующий компонент
+            const container = document.getElementById(id);
+            const arrow_image = container.getElementsByClassName("arrow")[0];
+            const content_block = container.getElementsByClassName("content")[0];
+            let is_opened = content_block.style.display !== "none";
+
+            if (is_opened) {
+                content_block.style.display = "none";
+                arrow_image.style.transform = "none";
+            }
+
+            else {
+                content_block.style.display = "grid";
+                arrow_image.style.transform = "rotate(180deg)";
+            }
+        }
+
+
+        const manipulateHeaderMenu = (id) => {
+            const menu = document.querySelector("#site_menu");
+            const menu_btn = document.querySelector("#header_mobile .menu")
+
+            if (menu.style.display === "none" ||  menu.style.display === "") {
+                menu.style.display = "block";
+                if (!menu_btn.children[0].classList.contains("closed")) {
+                    [...menu_btn.children].forEach((el)=>el.classList.add("closed"));
+                }
+            }
+            else {
+                menu.style.display = "none";
+                // menu_btn.classList.add("closed");
+                [...menu_btn.children].forEach((el)=>el.classList.remove("closed"));
+            }
+        }
+
+    </script>
+
+</html>

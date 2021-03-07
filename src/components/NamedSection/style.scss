@@ -1,0 +1,15 @@
+$text_color: #253B49;
+
+.named_section {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  margin: 30px auto;
+
+  color: $text_color;
+
+  h2 {
+    text-align: left;
+  }
+}
