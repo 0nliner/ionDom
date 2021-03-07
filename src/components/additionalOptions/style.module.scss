@@ -5,8 +5,10 @@
     line-height: 135.69%;
     margin-bottom: 20px;
 
-    :before {
+    .headtext:after {
         content: "Дополнительные опции";
+        font-family: Roboto-Regular;
+        color: #fff;
     }
 }
 
