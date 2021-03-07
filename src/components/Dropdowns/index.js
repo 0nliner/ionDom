@@ -6,10 +6,16 @@ import arrow_logo from "../../static/Arrow 11.svg";
 function Dropdown (props) {
     // props.children - children components
     // props.onClick - onClick event
+    // props.state
 
     return (
         <div className={"dropdown"} onClick={props.onClick}>
-            {props.title}
+            <div className={"title"}>
+                {props.title}
+            </div>
+            <div className={"arrow_wrapper"}>
+                <Arrow state={!props.state}/>
+            </div>
         </div>
     );
 }

@@ -77,6 +77,19 @@
 }
 
 
+.dropdown {
+  display: flex;
+  width: 100%;
+  position: relative;
+
+  .arrow_wrapper {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    right: 0;
+  }
+}
+
 .inline_select {
   display: flex;
 
