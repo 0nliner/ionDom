@@ -81,4 +81,4 @@ function SystemComposition(props) {
 }
 
 
-export default ItemsBlock
+export {ItemsBlock};

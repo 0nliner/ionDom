@@ -6,7 +6,9 @@ import Banner from "../../components/banner";
 import TurnkeyInstalation from "../../components/turnkeyInstalation";
 import {SetupCards} from "../../components/setup_cards";
 import {DeliveryCalc} from "../../components/delivery_calc";
+import {ItemsBlock} from "../../components/itemCard";
 import AdditionalOptions from "../../components/additionalOptions";
+import {ProjectsExamples} from "../../components/CardsScrollView/projectExamples";
 import {Footer} from "../../components/footer";
 
 import "./style.scss";
@@ -25,8 +27,10 @@ function VideoWatchingPage () {
                 <SetupCards/>
                 ...
                 <DeliveryCalc/>
+                <ItemsBlock/>
                 ...
                 <AdditionalOptions/>
+                <ProjectsExamples/>
                 <Footer/>
             </div>
 
