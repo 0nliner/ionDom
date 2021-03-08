@@ -1,7 +1,6 @@
 import react from "react";
 import "./style.scss";
 
-
 function NamedSection (props) {
     // props.title
     // props.children

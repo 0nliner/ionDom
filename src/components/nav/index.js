@@ -1,4 +1,5 @@
 import react from "react";
+
 import "./style.scss";
 import {DropdownBlock, Selectable} from "../Dropdowns";
 import logo from "../../static/icons/IonDom.svg";

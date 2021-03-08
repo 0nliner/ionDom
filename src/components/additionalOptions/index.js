@@ -5,10 +5,9 @@ export default function AdditionalOptions() {
     return (
         <div className={styles.AdditionalOptions}>
                 <div className={styles.headtext}>Дополнительные опции (при покупке комплекта)</div>
-
                 <div className={styles.optionContainer}>
                     <div className={styles.iconPlace}>
-                        <div className={styles.electricPlugIcon}></div>
+                        <div className={styles.electricPlugIcon}/>
                     </div>
                     <div className={styles.options}>
                         <Option name="Электроработы" pricing="от 2000 ₽"/>
@@ -20,7 +19,7 @@ export default function AdditionalOptions() {
 
                 <div className={styles.optionContainer}>
                     <div className={styles.iconPlace}>
-                        <div className={styles.wifiIcon}></div>
+                        <div className={styles.wifiIcon}/>
                     </div>
                     <div className={styles.options}>
                         <Option name="4G интернет-канал" pricing="от 2000 ₽"/>
@@ -32,7 +31,7 @@ export default function AdditionalOptions() {
 
                 <div className={styles.optionContainer}>
                     <div className={styles.iconPlace}>
-                        <div className={styles.lockIcon}></div>
+                        <div className={styles.lockIcon}/>
                     </div>
                     <div className={styles.options}>
                         <Option name="Запирающийся ящик" pricing="от 2000 ₽"/>
@@ -44,7 +43,7 @@ export default function AdditionalOptions() {
 
                 <div className={styles.optionContainer}>
                     <div className={styles.iconPlace}>
-                        <div className={styles.warrantyIcon}></div>
+                        <div className={styles.warrantyIcon}/>
                     </div>
                     <div className={styles.options}>
                         <Option name="Дополнительные гарантии" pricing="от 2000 ₽"/>
@@ -54,8 +53,7 @@ export default function AdditionalOptions() {
                     </div>
                 </div>
 
-
-        </div>
+            </div>
     )
 }
 

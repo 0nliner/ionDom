@@ -17,6 +17,15 @@
     width: 100%;
     min-width: 340px;
 
+    .headtext:after {
+        content: "Дополнительные опции";
+        font-family: Roboto-Regular;
+        color: #fff;
+    }
+}
+
+.optionContainer {
+    width: 949px;
     height: 85px;
     display: flex;
     margin-bottom: 7px;

@@ -1,0 +1,165 @@
+.itemCard {
+    width: 286px;
+    background: #fff;
+
+    box-shadow: 0px 2px 22px 2px rgba(16, 21, 48, 0.06);
+
+    border: 1px solid rgba(35, 37, 47, 0.13);
+    border-radius: 11px;
+
+    .head {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+        height: 127px;
+        background: url("../../static/image-1.png");
+        border-radius: 7px 7px 0px 0px;
+
+
+        .block {
+            width: 135px;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+            padding-bottom: 11px;
+
+            .logo {
+                width: 111px;
+                height: 40px;
+                background-image: url("../../static/logo.svg");
+            }
+
+
+            .name {
+                font-family: Roboto-Regular;
+                font-size: 19px;
+                color: #fff;
+            }
+        }
+    }
+    
+
+    .center {
+        border-bottom: 2px solid rgba(226, 227, 228, 0.4);
+        margin-bottom: 15px;
+
+        .block2 {
+            margin-top: 16px;
+            margin-left: 26px;
+
+
+            .centerheadtext {
+                color: #1FBF4C;
+                font-family: Roboto-Medium;
+                font-size: 17px;
+                margin-bottom: 9px;
+            }
+
+
+            .paragra {
+                .point {
+                    margin-right: 17px;
+                }
+
+
+                display: flex;
+
+                color: #224156;
+
+                align-items: center;
+                margin-bottom: 12px;
+                
+
+                font-family: Roboto-Regular;
+                font-size: 13px;
+                line-height: 154.69%;
+                letter-spacing: 0.01em;
+            }
+        }
+    }
+
+    .bottom {
+        font-family: Roboto-Medium;
+        font-size: 17px;
+        margin-bottom: 15px;
+
+        .left {
+            margin-left: 26px;
+        }
+        .right {
+            margin-right: 22px;
+        }
+        .blue {
+            display: flex;
+            justify-content: space-between;
+            color: #224156;
+            margin-bottom: 3px;
+        }
+        .orange {
+            display: flex;
+            justify-content: space-between;
+            color: #E97D27;
+        }
+    }
+
+}
+
+
+.itemsBlock {
+    display: flex;
+    width: 990px;
+    justify-content: space-around;
+    .itemsblockheadtext {
+        color: #224156;
+
+        font-family: Roboto-Medium;
+        font-size: 17px;
+
+        margin-bottom: 15px;
+    }
+
+    .btnsblock {
+        display: flex;
+        margin-top: 19px;
+        align-items: center;
+
+
+        .purchase {
+            width: 143px;
+            height: 48px;
+    
+            background: #1F5FBF;
+            color: #fff;
+            border-radius: 4px;
+    
+            font-family: Roboto-Medium;
+            font-size: 17px;
+
+            margin-right: 27px;
+        }
+        
+
+        .details {
+            color: rgba(34, 65, 86, 0.7);
+            border-bottom: 1px solid rgba(34, 65, 86, 0.7);
+            font-family: Roboto-Medium;
+            font-size: 17px;
+        }
+    }
+}
+
+
+.itemBlock {
+    
+}
+
+
+
+
+
+
+
+
+
+html {
+    background: rgba(31, 95, 191, 0.05);
+}

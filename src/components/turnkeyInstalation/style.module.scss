@@ -27,7 +27,6 @@
 }
 
 
-
 .headtext {
     font-family: Roboto-Bold;
     font-size: 30px;
@@ -96,3 +95,10 @@
 //}
 //
 
+@media (max-width: 906px) {
+    .cardSpace {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        max-width: 580px;
+    }
+}
