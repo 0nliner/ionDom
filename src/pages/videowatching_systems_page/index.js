@@ -10,6 +10,7 @@ import {ItemsBlock} from "../../components/itemCard";
 import AdditionalOptions from "../../components/additionalOptions";
 import {ProjectsExamples} from "../../components/CardsScrollView/projectExamples";
 import {Reviews} from "../../components/CardsScrollView/reviews";
+import {Certificates} from "../../components/certificates";
 import {Footer} from "../../components/footer";
 
 import "./style.scss";
@@ -33,6 +34,8 @@ function VideoWatchingPage () {
                 <AdditionalOptions/>
                 <ProjectsExamples/>
                 <Reviews/>
+                <Certificates/>
+                ...
                 <Footer/>
             </div>
 

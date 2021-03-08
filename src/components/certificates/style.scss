@@ -1,0 +1,21 @@
+.certificates {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  width: 100%;
+
+  .cert {
+    width: 30vw;
+    max-width: 200px;
+
+    height: 20vw;
+    max-height: 140px;
+
+    margin: 20px auto;
+
+    background-size: cover;
+    background-position: center;
+  }
+
+}
