@@ -60,7 +60,7 @@ function CardsScrollView(props) {
                 </h2>
 
                 <nav>
-                    <a className={"showAll"}>
+                    <a href="#" className={"showAll"}>
                         Показать все
                     </a>
 
