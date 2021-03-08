@@ -1,3 +1,31 @@
+.cardSpace {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+
+.card {
+    display: flex;
+    align-items: flex-end;
+    width: 290px;
+    height: 200px;
+    margin: 10px auto;
+
+    font-family: Roboto-Regular;
+    font-size: 15px;
+    line-height: 135.69%;
+
+
+    .cardText {
+        text-align: center;
+        width: 115px;
+        background: #23252F;
+        color: #fff;
+    }
+}
+
 
 
 .headtext {
@@ -8,41 +36,63 @@
     max-width: 689px;
 }
 
-.cardSpace {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-gap: 12px;
+//
+//@media (max-width: 906px) {
+//    .cardSpace {
+//        grid-template-columns: repeat(2, 1fr);
+//        grid-template-rows: repeat(3, 1fr);
+//        max-width: 580px;
+//    }
+//}
 
-    max-width: 894px;
+
+/* для мобилок */
+@media (max-width: 840px) {
 
 
-    .card {
-        display: flex;
-        align-items: flex-end;
-        width: 290px;
-        height: 200px;
-    
-        font-family: Roboto-Regular;
-        font-size: 15px;
-        line-height: 135.69%;
+}
 
-        
-        .cardText {
-            text-align: center;
-            width: 115px;
-            background: #23252F;
-            color: #fff;
-        }
-    }
+
+/* для экранов с шириной больше 1250px*/
+@media (min-width: 1250px) {
+
 }
 
 
 
-@media (max-width: 906px) {
+/* для экранов с шириной не больше 1000px*/
+/*@media (max-width: 1250px) {  */
+@media (max-width: 1250px) and (min-width: 840px) {
+
     .cardSpace {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        max-width: 580px;
+        display: flex;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 12px;
+
+        max-width: 894px;
     }
 }
+
+
+
+
+///* для мобилок */
+//@media (max-width: 840px) {
+//
+//}
+//
+//
+///* для экранов с шириной больше 1250px*/
+//@media (min-width: 1250px) {
+//
+//}
+//
+//
+//
+///* для экранов с шириной экрана не больше 1000px*/
+///*@media (max-width: 1250px) {  */
+//@media (max-width: 1250px) and (min-width: 840px) {
+//}
+//
+

@@ -50,11 +50,12 @@ function Selectable (props) {
 
 function DropdownBlock (props) {
     // props.title - тайтл для dropdown
+    // props.className
 
     let [displayInnerContent, setDisplayInnerContent] = react.useState(false);
 
     return (
-        <div className={"dropdown_block"}>
+        <div className={"dropdown_block " + props.className}>
             <Dropdown title={props.title}
                       state={displayInnerContent}
                       onClick={() => setDisplayInnerContent(!displayInnerContent)}/>

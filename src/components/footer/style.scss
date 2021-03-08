@@ -143,6 +143,11 @@ footer hr {
 
 /* для экранов с шириной больше 1250px*/
 @media (min-width: 1250px) {
+  #footer_logo {
+    position: relative;
+    left: 20px;
+  }
+
   footer .cols {
     display: flex;
     justify-content: space-between;
@@ -167,6 +172,11 @@ footer hr {
 /* для экранов с шириной экрана не больше 1000px*/
 /*@media (max-width: 1250px) {  */
 @media (max-width: 1250px) and (min-width: 840px) {
+  #footer_logo {
+    position: relative;
+    left: 20px;
+  }
+
   footer .cols {
     display: flex;
     justify-content: space-between;

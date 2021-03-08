@@ -1,14 +1,15 @@
 import react from "react";
 import "./style.scss";
 import {DropdownBlock, Selectable} from "../Dropdowns";
-
+import logo from "../../static/icons/IonDom.svg";
 
 
 function Nav (props) {
     return (
         <div id={"right_nav"}>
-            <div className={"logo"}>
-            </div>
+            {/*<div className={"logo"}>*/}
+            <img className={"logo"} src={logo} alt={"иондом"}/>
+            {/*</div>*/}
             <div className={"content"}>
 
                 <DropdownBlock title={"Типовые решения"}>

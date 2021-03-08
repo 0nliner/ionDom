@@ -306,6 +306,11 @@ header {
 
 /* для мобилок */
 @media (max-width: 840px) {
+  header {
+    position: absolute !important;
+  }
+
+
 
   .site_menu {
     display: none;
@@ -567,8 +572,9 @@ header {
   }
 
   #header_logo {
-    top: 28px;
-    left: 10vw;
+    //top: 28px;
+    //left: 10vw;
+    display: none;
   }
 
   #header_logo_top_bar {
@@ -612,7 +618,7 @@ header {
 
 
 
-/* для экранов с шириной экрана не больше 1000px*/
+/* для экранов с шириной не больше 1000px*/
 /*@media (max-width: 1250px) {  */
 @media (max-width: 1250px) and (min-width: 840px) {
   footer .cols {
@@ -621,6 +627,12 @@ header {
     /*place-content: center;*/
     flex-wrap: wrap;
   }
+
+
+  #header_desktop .basket_container {
+    right: 10px;
+  }
+
 
   footer .col {
     display: flex;
@@ -648,7 +660,8 @@ header {
   }
 
   #header_logo_top_bar {
-    display: block;
+    //display: block;
+    display: none;
   }
 
   #row_1 {

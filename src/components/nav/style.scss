@@ -3,6 +3,29 @@ $white: white;
 
 
 #right_nav {
+
+  /* width */
+  ::-webkit-scrollbar {
+    //width: 20px;
+    display: none;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    display: none;
+
+    //box-shadow: inset 0 0 5px grey;
+    //border-radius: 10px;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    display: none;
+
+    //background: red;
+    //border-radius: 10px;
+  }
+
   //position: fixed;
   z-index: 10;
   left: 0;
@@ -17,6 +40,10 @@ $white: white;
 
   transition: 1s;
 
+  .logo {
+    display: block;
+    margin: 20px auto;
+  }
 
   .content {
     // контент элемента
@@ -88,6 +115,16 @@ $white: white;
         color: $blue;
       }
     }
+  }
+}
+
+@media (max-width: 840px) {
+  #right_nav {
+    display: none;
+  }
+
+  .App > .VideoWatchingPage >.content {
+    width: 100%;
   }
 }
 
