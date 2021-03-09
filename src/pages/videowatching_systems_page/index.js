@@ -11,6 +11,7 @@ import AdditionalOptions from "../../components/additionalOptions";
 import {ProjectsExamples} from "../../components/CardsScrollView/projectExamples";
 import {Reviews} from "../../components/CardsScrollView/reviews";
 import {Certificates} from "../../components/certificates";
+import {Partners} from "../../components/partners";
 import {Footer} from "../../components/footer";
 
 import "./style.scss";
@@ -35,7 +36,7 @@ function VideoWatchingPage () {
                 <ProjectsExamples/>
                 <Reviews/>
                 <Certificates/>
-                ...
+                <Partners/>
                 <Footer/>
             </div>
 

@@ -142,7 +142,29 @@ function InlineSelectChoises (props) {
 }
 
 
+function HiContrastDropDown (props) {
+    // props.title
+    // props.children
+
+    let [show, setShow] = react.useState(false);
+
+    return (
+        <div className={"HiContrastDropDown"}>
+            <button onClick={setShow}>
+                {props.title}
+            </button>
+
+            <div className={"dropdown_content"}>
+                {props.children}
+            </div>
+        </div>
+    );
+}
+
+
 export {DropdownBlock,
         NamedDropdownBlock,
         Selectable,
-        InlineSelectChoises};
+        InlineSelectChoises,
+        HiContrastDropDown
+        };

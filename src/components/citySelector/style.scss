@@ -1,0 +1,18 @@
+.CitySelector {
+  width: 100%;
+
+  background: #1F5FBF;
+  opacity: 0.05;
+
+  color: #224156;
+
+  .CitySelectorWrapper {
+    width: calc(100% - 40px);
+    margin: 20px auto;
+
+    a {
+      color: antiquewhite;
+    }
+  }
+}
+

@@ -113,3 +113,25 @@
   content: "*";
   //margin-right: 5px;
 }
+
+.HiContrastDropDown {
+  button {
+    background: #1F5FBF;
+    border-radius: 4px;
+  }
+
+  .dropdown_content {
+    position: relative;
+    top: 20px;
+
+    min-height: 100px;
+    min-width: 400px;
+    
+    z-index: 100;
+
+    background: #FFFFFF;
+    border-radius: 8px;
+    border-right: 3px solid #1f5ebd;
+  }
+
+}

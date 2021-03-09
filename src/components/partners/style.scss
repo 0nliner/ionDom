@@ -1,0 +1,31 @@
+.partners {
+
+  .wrapper {
+    width: 75vw;
+    margin: auto;
+  }
+
+  .row {
+    display: flex;
+    place-content: center;
+    flex-wrap: wrap;
+
+  }
+
+}
+
+@media (max-width: 1250px) and (min-width: 840px) {
+  .partners {
+
+    .row {
+      justify-content: center !important;
+      flex-wrap: wrap;
+    }
+
+
+    .wrapper {
+      width: auto;
+    }
+
+  }
+}
