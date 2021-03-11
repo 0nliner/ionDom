@@ -120,18 +120,36 @@
     border-radius: 4px;
   }
 
-  .dropdown_content {
-    position: relative;
-    top: 20px;
+  .darkBG {
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+    left: 0;
 
-    min-height: 100px;
-    min-width: 400px;
-    
-    z-index: 100;
+    width: 100vw;
+    height: 100vh;
 
-    background: #FFFFFF;
-    border-radius: 8px;
-    border-right: 3px solid #1f5ebd;
+    display: grid;
+    place-content: center;
+
+    background-color: rgba(0, 0, 0, 0.3);
+
+    .dropdown_content {
+      position: relative;
+      top: 20px;
+
+
+      min-height: 100px;
+      min-width: 400px;
+
+      z-index: 100;
+
+      background: #FFFFFF;
+      border-radius: 8px;
+      border-right: 3px solid #1f5ebd;
+    }
+
   }
+
 
 }

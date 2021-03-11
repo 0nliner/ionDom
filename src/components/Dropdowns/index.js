@@ -1,4 +1,8 @@
 import react from "react";
+import reactDom from "react-dom";
+
+import {useDispatch} from "react-redux";
+
 import "./style.scss";
 import arrow_logo from "../../static/Arrow 11.svg";
 
@@ -145,8 +149,27 @@ function InlineSelectChoises (props) {
 function HiContrastDropDown (props) {
     // props.title
     // props.children
+    // props.className
+    // props.show
+    // props.setShow
 
-    let [show, setShow] = react.useState(false);
+    let [show, setShow] = props.show && props.setShow ?
+        [props.show, props.setShow]
+        :
+        react.useState(false);
+
+    function DarkContent (props) {
+        // props.children
+
+        if (show) {
+            return (
+                <div className={"darkBG " + props.className} onClick={()=>{setShow(!show)}}>
+                    {props.children}
+                </div>
+            );
+        }
+        return null;
+    }
 
     return (
         <div className={"HiContrastDropDown"}>
@@ -154,9 +177,10 @@ function HiContrastDropDown (props) {
                 {props.title}
             </button>
 
-            <div className={"dropdown_content"}>
+            <DarkContent>
                 {props.children}
-            </div>
+            </DarkContent>
+
         </div>
     );
 }

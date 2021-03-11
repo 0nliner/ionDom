@@ -89,7 +89,7 @@ function DeliveryCalc (props) {
         // props.state
         // props.inp_key
 
-        console.log(props.inp_key);
+        // console.log(props.inp_key);
         return (
             <div className={"InlineInputChange"}>
                 <div className={"title"}>{props.title}</div>

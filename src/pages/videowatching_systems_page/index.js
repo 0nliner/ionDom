@@ -3,11 +3,13 @@ import react from "react";
 import {Header} from "../../components/header";
 import {Nav} from "../../components/nav";
 import Banner from "../../components/banner";
+import {CitySelector} from "../../components/citySelector";
 import TurnkeyInstalation from "../../components/turnkeyInstalation";
 import {SetupCards} from "../../components/setup_cards";
 import {DeliveryCalc} from "../../components/delivery_calc";
 import {ItemsBlock} from "../../components/itemCard";
 import AdditionalOptions from "../../components/additionalOptions";
+import {SetupOptions} from "../../components/SetupOptions";
 import {ProjectsExamples} from "../../components/CardsScrollView/projectExamples";
 import {Reviews} from "../../components/CardsScrollView/reviews";
 import {Certificates} from "../../components/certificates";
@@ -25,13 +27,13 @@ function VideoWatchingPage () {
             <div className={"content"}>
                 <Header/>
                 <Banner/>
-                ...
+                <CitySelector/>
                 <TurnkeyInstalation/>
                 <SetupCards/>
                 ...
                 <DeliveryCalc/>
                 <ItemsBlock/>
-                ...
+                <SetupOptions/>
                 <AdditionalOptions/>
                 <ProjectsExamples/>
                 <Reviews/>

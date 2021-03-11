@@ -1,0 +1,124 @@
+.SetupOptions {
+  width: 100%;
+
+  .top_bar {
+    position: relative;
+
+    width: 100%;
+    margin-bottom: 25px;
+
+    .total_price {
+      display: flex;
+
+      position: absolute;
+      right: 0;
+
+      .num {
+        color: #E97D27;
+      }
+    }
+  }
+
+  .rows {
+    background: #FFFFFF;
+
+    border: 1px solid #224156;
+    box-sizing: border-box;
+    border-radius: 10px;
+
+    .row {
+      display: flex;
+      justify-content: space-around;
+      place-items: center;
+      flex-wrap: wrap;
+
+      .title {
+        font-size: 0.7em;
+        max-width: 70%;
+        height: 100%;
+      }
+
+      .replace {
+        color: #224156;
+        border-bottom: dashed 1px #224156;
+      }
+
+      .counter {
+        display: flex;
+        position: relative;
+
+        .sub {
+          position: relative;
+          height: 20px;
+          right: 7px;
+        }
+
+        .content_holder {
+          display: grid;
+          place-content: center;
+
+          height: 20px;
+          width: 20px;
+
+          background: #FFFFFF;
+          border: 1px solid rgba(37, 59, 73, 0.4);
+          box-sizing: border-box;
+          border-radius: 3px;
+
+        }
+
+        .add {
+          position: relative;
+          height: 20px;
+          left: 7px;
+        }
+      }
+
+      .price {
+        color: #E97D27;
+        font-weight: bold;
+      }
+    }
+
+
+    .add_option {
+      display: grid;
+      place-content: center;
+
+      height: 47px;
+
+      background: #F4F4F4;
+      border-radius: 0 0 9px 9px;
+    }
+  }
+
+  .rows:nth-child(1) {
+    border-radius: 9px 9px 0 0;
+  }
+
+  .bottom_bar {
+    display: grid;
+    place-content: center;
+    margin-top: 30px;
+
+    .showBtn {
+      display: flex;
+      justify-content: space-around;
+      place-items: center;
+
+      background: #FFFFFF;
+      border: 1px solid #224156;
+      box-sizing: border-box;
+      border-radius: 1000px;
+
+      .arrow {
+        margin-right: 3px;
+        height: 20px;
+      }
+
+      .text {
+        font-weight: bold;
+      }
+    }
+  }
+}

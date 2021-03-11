@@ -17,6 +17,26 @@ import arrow15 from "../../static/icons/Arrow 15.svg";
 
 
 function Header () {
+
+    function BottomNavItem(props) {
+        // props.title
+        // props.onClick
+
+        function isSelected() {
+            // mock for future logic
+            return true;
+        }
+
+        react.
+
+        return (
+            <div className={"BottomNavItem"} >
+                {props.title}
+            </div>
+        );
+    }
+
+
     return (
         <div>
             <header id="header_desktop">
@@ -59,6 +79,9 @@ function Header () {
                         </span>
                         </a>
                     </nav>
+                    <div className={"bottomNav"}>
+
+                    </div>
                 </div>
 
             </header>

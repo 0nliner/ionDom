@@ -1,8 +1,8 @@
 .CitySelector {
   width: 100%;
 
-  background: #1F5FBF;
-  opacity: 0.05;
+  background: #c4cfe0;
+  //opacity: 0.05;
 
   color: #224156;
 
@@ -13,6 +13,14 @@
     a {
       color: antiquewhite;
     }
+
+  .dropdown_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    flex-wrap: wrap;
+  }
+
   }
 }
 

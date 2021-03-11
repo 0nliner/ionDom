@@ -21,11 +21,22 @@ a {
 
   border-top: 6px solid #1F5FBF;
   background-color: white;
+
+  #header_logo {
+    position: absolute;
+  }
+
+  .bottomNav {
+    width: 100%;
+
+    .BottomNavItem {
+      display: grid;
+      place-content: center;
+    }
+  }
 }
 
-#header_logo {
-  position: absolute;
-}
+
 
 #header_desktop > .wrapper {
   width: calc(100vw - 20vw);
