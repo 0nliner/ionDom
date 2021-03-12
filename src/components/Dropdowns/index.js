@@ -148,8 +148,9 @@ function InlineSelectChoises (props) {
 
 function HiContrastDropDown (props) {
     // props.title
+    // props.addclass
     // props.children
-    // props.className
+    // props.class
     // props.show
     // props.setShow
 
@@ -163,7 +164,7 @@ function HiContrastDropDown (props) {
 
         if (show) {
             return (
-                <div className={"darkBG " + props.className} onClick={()=>{setShow(!show)}}>
+                <div className={"darkBG"} onClick={()=>{setShow(!show)}}>
                     {props.children}
                 </div>
             );
@@ -173,7 +174,7 @@ function HiContrastDropDown (props) {
 
     return (
         <div className={"HiContrastDropDown"}>
-            <button onClick={setShow}>
+            <button onClick={setShow} className={props.addclass}>
                 {props.title}
             </button>
 

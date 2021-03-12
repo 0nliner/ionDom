@@ -1,3 +1,5 @@
+// TODO: рефакторить
+
 .SetupOptions {
   width: 100%;
 
@@ -31,6 +33,8 @@
       justify-content: space-around;
       place-items: center;
       flex-wrap: wrap;
+      padding: 20px;
+      border-bottom: 1px solid #224156;
 
       .title {
         font-size: 0.7em;
@@ -41,6 +45,7 @@
       .replace {
         color: #224156;
         border-bottom: dashed 1px #224156;
+        background: none;
       }
 
       .counter {
@@ -49,7 +54,10 @@
 
         .sub {
           position: relative;
+
           height: 20px;
+          width: 20px;
+
           right: 7px;
         }
 
@@ -58,7 +66,7 @@
           place-content: center;
 
           height: 20px;
-          width: 20px;
+          min-width: 20px;
 
           background: #FFFFFF;
           border: 1px solid rgba(37, 59, 73, 0.4);
@@ -69,7 +77,10 @@
 
         .add {
           position: relative;
+
           height: 20px;
+          width: 20px;
+
           left: 7px;
         }
       }
@@ -78,6 +89,35 @@
         color: #E97D27;
         font-weight: bold;
       }
+
+      .altrow_content_holder {
+        display: flex;
+        flex-direction: column;
+
+        min-height: 30vh;
+        width: 400px;
+        max-height: 600px;
+
+        overflow-y: scroll;
+        background-color: white;
+
+        .RowSelectableAlternative {
+          display: flex;
+          justify-content: space-around;
+          place-items: center;
+
+          width: 100%;
+          height: 60px;
+
+          div {
+            display: grid;
+            place-content: center;
+          }
+
+        }
+
+      }
+
     }
 
 
@@ -85,6 +125,7 @@
       display: grid;
       place-content: center;
 
+      width: 100%;
       height: 47px;
 
       background: #F4F4F4;
@@ -92,7 +133,7 @@
     }
   }
 
-  .rows:nth-child(1) {
+  .row:nth-child(1) {
     border-radius: 9px 9px 0 0;
   }
 
@@ -121,4 +162,20 @@
       }
     }
   }
+
+  .simplified_row {
+    display: flex;
+    justify-content: space-around;
+    place-items: center;
+
+    width: 100%;
+    height: 60px;
+
+    div {
+      display: grid;
+      place-content: center;
+    }
+
+  }
+
 }

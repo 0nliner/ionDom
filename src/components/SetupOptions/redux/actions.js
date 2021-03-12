@@ -1,4 +1,4 @@
-import {SET_ACTIVATED, ADD_UNIT, SUBTRACT_UNIT} from "./ActionTypes";
+import {SET_ACTIVATED, ADD_UNIT, SUBTRACT_UNIT, REPLACE_OPTION} from "./ActionTypes";
 
 const setActivated = (isActivated, id) => (
     {
@@ -24,4 +24,13 @@ const subUnit = (id) => (
 );
 
 
-export {setActivated, addUnit, subUnit};
+const replaceOption = (parent_id, alternative_id) => (
+    {
+        type: REPLACE_OPTION,
+        parent_id: parent_id,
+        alternative_id: alternative_id
+    }
+);
+
+
+export {setActivated, addUnit, subUnit, replaceOption};

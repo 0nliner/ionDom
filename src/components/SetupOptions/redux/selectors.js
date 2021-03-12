@@ -53,6 +53,8 @@ const optionAlternative = (id) =>
 );
 
 
+
+
 const selectOption = (id) =>
     // возвращает данные опции
     createSelector(
