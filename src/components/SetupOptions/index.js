@@ -98,17 +98,17 @@ function SetupOptions (props) {
         let alernative_current_data = useSelector(selectOption(props.id));
 
         return (
-            <div className={"simplified_row row"}
-                 onClick={()=>dispatch(setActivated(!alernative_current_data.activated, alernative_current_data.id))}>
+                <div className={"simplified_row row"}
+                     onClick={()=>dispatch(setActivated(!alernative_current_data.activated, alernative_current_data.id))}>
 
-                <div className="title">
-                    {alernative_current_data.title}
-                </div>
+                    <div className="title">
+                        {alernative_current_data.title}
+                    </div>
 
-                <div className="price">
-                    {alernative_current_data.price_for_unit}
+                    <div className="price">
+                        {alernative_current_data.price_for_unit}
+                    </div>
                 </div>
-            </div>
         );
     }
 

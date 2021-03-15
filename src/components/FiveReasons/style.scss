@@ -1,0 +1,52 @@
+.FiveReasons {
+  display: flex;
+  flex-direction: column;
+
+  .before_text {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+
+  .content_row {
+    width: 100%;
+    display: flex;
+    place-content: center;
+    place-items: center;
+
+    .text {
+      width: 50%;
+      margin: 0 10px;
+    }
+
+    img {
+      width: 50%;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .content_row {
+    flex-direction: column;
+    margin: 20px 0;
+
+    .text {
+      width: 100% !important;
+      margin: 20px 0;
+    }
+
+    img {
+      margin-top: 20px;
+      width: 100% !important;
+    }
+  }
+
+  .content_row:last-child {
+    .text {
+      order: 1;
+    }
+
+    img {
+      order: 2;
+    }
+  }
+}

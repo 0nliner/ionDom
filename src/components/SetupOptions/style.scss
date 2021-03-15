@@ -30,7 +30,7 @@
 
     .row {
       display: flex;
-      justify-content: space-around;
+      justify-content: space-around !important;
       place-items: center;
       flex-wrap: wrap;
       padding: 20px;

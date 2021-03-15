@@ -1,0 +1,41 @@
+.VideoWatchingPage {
+  display: flex;
+}
+
+
+ //.content {}
+
+.VideoWatchingPage > .content {
+  width: calc(100vw - 300px);
+  overflow-y: scroll;
+  height: 100vh;
+
+  header {
+    //position: initial;
+    width: 100%;
+    position: relative;
+
+  }
+
+  #header_desktop {
+    .wrapper {
+      width: 100% !important;
+    }
+
+    #search_field {
+      width: calc(40vw - 130px);
+    }
+  }
+}
+
+
+
+#right_nav {
+  width: 300px !important;
+  position: initial;
+
+  .content {
+    width: 200px;
+    font-size: 0.8em;
+  }
+}

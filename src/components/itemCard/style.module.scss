@@ -106,8 +106,11 @@
 
 .itemsBlock {
     display: flex;
-    width: 990px;
+    width: 100%;
     justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px auto;
+
     .itemsblockheadtext {
         color: #224156;
 

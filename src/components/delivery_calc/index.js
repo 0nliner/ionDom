@@ -4,6 +4,7 @@ import "./style.scss";
 import check from "../../static/Vector.svg";
 import {InlineSelectChoises, NamedDropdownBlock, Selectable} from "../Dropdowns";
 import { v4 as uuidv4 } from 'uuid';
+import {NamedSection} from "../NamedSection";
 
 
 function CheckPoint (props) {
@@ -24,9 +25,9 @@ function NamedCheckBox (props) {
     // props,onClick
     return (
         <div className={"namedCheckBox"}>
-            <div className={"title"}>
+            <li className={"title"}>
                 {props.title}
-            </div>
+            </li>
 
             <div className={"checkPointWrapper"}>
                 <CheckPoint state={props.state} onClick={props.onClick}/>
@@ -43,14 +44,14 @@ function DeliveryCalc (props) {
         // props.title
         // props.children
         return (
-            <div className={"content_block_wrapper"}>
-                <div className={"content_block " + props.className}>
-                    <h3>{props.title}</h3>
-                    <div className={"content"}>
-                        {props.children}
+                <div className={"content_block_wrapper"}>
+                    <div className={"content_block " + props.className}>
+                        <h3>{props.title}</h3>
+                        <div className={"content"}>
+                            {props.children}
+                        </div>
                     </div>
                 </div>
-            </div>
         );
     }
 
@@ -107,78 +108,80 @@ function DeliveryCalc (props) {
     }
 
     return (
-        <div className={"delivery_calc"}>
+        <NamedSection>
+            <div className={"delivery_calc"}>
 
-            {/* сервисы */}
+                {/* сервисы */}
 
-            <Block className={"services"} title={"Сервисы"}>
-                <div className={"checkpoints"}>
+                <Block className={"services"} title={"Сервисы"}>
+                    <div className={"checkpoints"}>
 
-                    <NamedCheckBox title={"Установка и монтаж"}
-                                   state={setup}
-                                   onClick={setSetup}/>
+                        <NamedCheckBox title={"Установка и монтаж"}
+                                       state={setup}
+                                       onClick={setSetup}/>
 
-                    <NamedCheckBox title={"Сервис Starthelp"}
-                                   state={service}
-                                   onClick={setService}/>
+                        <NamedCheckBox title={"Сервис Starthelp"}
+                                       state={service}
+                                       onClick={setService}/>
 
-                    <NamedCheckBox title={"Комплект оборудования для самостоятельной установки"}
-                                   state={kit}
-                                   onClick={setKit}/>
-                </div>
-            </Block>
+                        <NamedCheckBox title={"Комплект оборудования для самостоятельной установки"}
+                                       state={kit}
+                                       onClick={setKit}/>
+                    </div>
+                </Block>
 
-            {/* Особеннности */}
+                {/* Особеннности */}
 
-            <Block className={"special"} title={"Особенности"}>
+                <Block className={"special"} title={"Особенности"}>
 
-                <div className={"col1"}>
-                    <strong>*Тип объекта</strong>
-                    <NamedDropdownBlock>
-                        <Selectable text={"test"}/>
-                        <Selectable text={"test"}/>
-                    </NamedDropdownBlock>
+                    <div className={"col1"}>
+                        <strong>*Тип объекта</strong>
+                        <NamedDropdownBlock>
+                            <Selectable text={"test"}/>
+                            <Selectable text={"test"}/>
+                        </NamedDropdownBlock>
 
-                    <strong>*IP + A</strong>
-                    <NamedDropdownBlock>
-                        <Selectable text={"test"}/>
-                        <Selectable text={"test"}/>
-                    </NamedDropdownBlock>
+                        <strong>*IP + A</strong>
+                        <NamedDropdownBlock>
+                            <Selectable text={"test"}/>
+                            <Selectable text={"test"}/>
+                        </NamedDropdownBlock>
 
-                </div>
+                    </div>
 
-                <div className={"col2"}>
-                    <NamedCheckBox state={remoteView} onClick={setRemoteView} title={"Удаленный просмотр на Смартфоне/планшете/ПК"}/>
-                    <NamedCheckBox state={internet} onClick={setInternet} title={"Интернет на обьекте установлен:"}/>
-                    <NamedCheckBox state={cloudStorage} onClick={setCloudStorage} title={"Облачное хранение:"}/>
-                </div>
-            </Block>
+                    <div className={"col2"}>
+                        <NamedCheckBox state={remoteView} onClick={setRemoteView} title={"Удаленный просмотр на Смартфоне/планшете/ПК"}/>
+                        <NamedCheckBox state={internet} onClick={setInternet} title={"Интернет на обьекте установлен:"}/>
+                        <NamedCheckBox state={cloudStorage} onClick={setCloudStorage} title={"Облачное хранение:"}/>
+                    </div>
+                </Block>
 
 
-            <Block title={"Камеры"} className={"cams"}>
-                <div className={"col1"}>
-                    <InlineSelectChoises title={"Качество камер: "} choises={cams_choises_objects}/>
-                    <InlineInputChange
-                        title={"*Кол-во дней записи:"}
-                        placeholder={12}
-                        inp_key={uuidv4()}
-                        state={quantityRecDays}
-                        setState={setQuantityRecDays}/>
-                    <InlineInputChange
-                        title={"*Кол-во микрофонов:"}
-                        placeholder={12}
-                        inp_key={uuidv4()}
-                        state={quantityMicro}
-                        setState={setQuantityMicro}/>
-                </div>
+                <Block title={"Камеры"} className={"cams"}>
+                    <div className={"col1"}>
+                        <InlineSelectChoises title={"Качество камер: "} choises={cams_choises_objects}/>
+                        <InlineInputChange
+                            title={"*Кол-во дней записи:"}
+                            placeholder={12}
+                            inp_key={uuidv4()}
+                            state={quantityRecDays}
+                            setState={setQuantityRecDays}/>
+                        <InlineInputChange
+                            title={"*Кол-во микрофонов:"}
+                            placeholder={12}
+                            inp_key={uuidv4()}
+                            state={quantityMicro}
+                            setState={setQuantityMicro}/>
+                    </div>
 
-                <div className={"col2"}>
+                    <div className={"col2"}>
 
-                </div>
+                    </div>
 
-            </Block>
+                </Block>
 
-        </div>
+            </div>
+        </NamedSection>
     );
 }
 

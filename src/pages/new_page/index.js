@@ -16,10 +16,9 @@ import {Reviews} from "../../components/CardsScrollView/reviews";
 import {Certificates} from "../../components/certificates";
 import {Partners} from "../../components/partners";
 import {Footer} from "../../components/footer";
-import {StartHelpUnderrow} from "../../components/startHelpUnderrow";
-import {FiveReasons} from "../../components/FiveReasons";
 
 import "./style.scss";
+import {StartHelpUnderrow} from "../../components/startHelpUnderrow";
 
 
 function VideoWatchingPage () {
@@ -44,7 +43,7 @@ function VideoWatchingPage () {
                 <Reviews/>
                 <Certificates/>
                 <Partners/>
-                <FiveReasons/>
+                ...
                 <Footer/>
             </div>
 

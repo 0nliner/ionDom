@@ -9,6 +9,7 @@ import camera_logo from "../../static/016-cctv-5.svg";
 import router_logo from "../../static/017-modem-1.svg";
 import remote_cam_logo from "../../static/020-cctv.svg";
 import panel_logo from "../../static/solar-panel 1.svg";
+import {NamedSection} from "../NamedSection";
 
 
 
@@ -34,17 +35,19 @@ function Cards (props) {
     // props.title - title
 
     return (
-        <div className={"cards_block"}>
-            <h2>{props.title}</h2>
+        <NamedSection>
+            <div className={"cards_block"}>
+                <h2>{props.title}</h2>
 
-            <div className={"cards_content"}>
-                {props.children}
-            </div>
+                <div className={"cards_content"}>
+                    {props.children}
+                </div>
 
-            <div className={"after_text"}>
-                {props.text}
+                <div className={"after_text"}>
+                    {props.text}
+                </div>
             </div>
-        </div>
+        </NamedSection>
     );
 }
 

@@ -23,7 +23,7 @@ function CitySelector (props) {
             <div className={"CitySelectorWrapper"}>
                 Установка видеонаблюдения под ключ в {currentCity}
 
-                <HiContrastDropDown title={"Выбрать город"}>
+                <HiContrastDropDown title={"Выбрать город"} addclass={"menuButton"}>
                     <div className={"dropdown_content"} onClick={()=> {
                         console.log(1)
                     }}>

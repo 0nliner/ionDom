@@ -18,19 +18,75 @@ import arrow15 from "../../static/icons/Arrow 15.svg";
 
 function Header () {
 
+    let [currentNavEl, setCurrentNavEl] = react.useState("Системы наблюдения");
+
+    let nav_elements = [
+        {
+            title: "Системы наблюдения",
+            categories: [
+                {
+                    title: "Типовые решения",
+                    content: [
+                        {title: "Для дома", url: "#"},
+                        {title: "Для дачи", url: "#"},
+                        {title: "В коттедж", url: "#"},
+                        {title: "Для квартиры", url: "#"},
+                        {title: "Для подъезда, лестницы", url: "#"},
+                        {title: "в лифт", url: "#"}
+                    ]
+                },
+
+
+                {
+                    title: "Системные особенности",
+                    content: [
+                        {title: "Ip видеонаблюдение", url: "#"},
+                        {title: "Видеонаблюдение через интернет", url: "#"},
+                        {title: "Беспроводное видеонаблюдение", url: "#"},
+                        {title: "Уличное видеонаблюдение", url: "#"},
+                        {title: "Видеонаблюдение на расстоянии", url: "#"},
+                        {title: "Автономная система видеонаблюдения", url: "#"}
+                    ]
+                },
+
+
+                {
+                    title: "Услуги и цены",
+                    content: [
+                        {title: "Проектирование", url: "#"},
+                        {title: "Установка и монтаж", url: "#"},
+                        {title: "Настройка", url: "#"},
+                        {title: "Сервисное обслуживание", url: "#"},
+                        {title: "Комплексные услуги", url: "#"},
+                        {title: "Сервис Starthelp", url: "#"}
+                    ]
+                }
+            ]
+        },
+
+        {
+            title: "СКУД Домофон Шлагбаум",
+            content: [],
+        },
+
+        {
+            title: "Системы охранной сигнализации",
+            content: []
+        },
+
+        {
+            title: " Системы пожарной безопастности",
+            content: []
+        }
+    ];
+
+
     function BottomNavItem(props) {
         // props.title
         // props.onClick
 
-        function isSelected() {
-            // mock for future logic
-            return true;
-        }
-
-        react.
-
         return (
-            <div className={"BottomNavItem"} >
+            <div className={props.title === currentNavEl ? "BottomNavItemSelected" : "BottomNavItem"} >
                 {props.title}
             </div>
         );
@@ -80,10 +136,9 @@ function Header () {
                         </a>
                     </nav>
                     <div className={"bottomNav"}>
-
+                        {nav_elements.map(el_data => <BottomNavItem title={el_data.title}/>)}
                     </div>
                 </div>
-
             </header>
 
 

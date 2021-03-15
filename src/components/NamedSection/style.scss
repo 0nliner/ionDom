@@ -4,12 +4,19 @@ $text_color: #253B49;
   display: flex;
   flex-direction: column;
 
-  width: 100%;
+  width: 90%;
   margin: 30px auto;
 
   color: $text_color;
 
   h2 {
     text-align: left;
+    margin-bottom: 20px;
   }
 }
+
+//@media (min-width: 700px) {
+//  .named_section {
+//    width: 90%;
+//  }
+//}

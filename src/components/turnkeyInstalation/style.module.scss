@@ -12,6 +12,7 @@
     width: 290px;
     height: 200px;
     margin: 10px auto;
+    background-size: cover;
 
     font-family: Roboto-Regular;
     font-size: 15px;
@@ -94,11 +95,18 @@
 //@media (max-width: 1250px) and (min-width: 840px) {
 //}
 //
+//
+//@media (max-width: 906px) {
+//    .cardSpace {
+//        grid-template-columns: repeat(2, 1fr);
+//        grid-template-rows: repeat(3, 1fr);
+//        //max-width: 580px;
+//    }
+//}
 
-@media (max-width: 906px) {
-    .cardSpace {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        max-width: 580px;
+@media (max-width: 900px) {
+    .card {
+        width: 40vw;
+        height: 31vw;
     }
 }

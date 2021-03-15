@@ -1,0 +1,60 @@
+.starthelp {
+
+  .title {
+    color: #224156;
+
+    .name {
+      color: #1F5FBF;
+    }
+  }
+
+  .content_holder {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 20px;
+    margin-bottom: 40px;
+
+    .text {
+      margin: 0 auto;
+      width: 50%;
+      position: relative;
+      left: 20px;
+
+      li {
+        margin-top: 10px;
+        color: #224156;
+        text-decoration-style: dotted;
+        text-decoration-color: #1F5FBF;
+      }
+
+      button {
+        display: grid;
+        place-content: center;
+        height: 40px;
+        margin-top: 20px;
+        padding: 0 10px;
+
+        color: white;
+        background: #FD7000;
+        border-radius: 4px;
+      }
+
+    }
+
+    img {
+      margin: 0 auto;
+      width: 50%;
+    }
+  }
+}
+
+@media (max-width:666px) {
+  .content_holder {
+    flex-direction: column;
+
+    img {
+      width: 100% !important;
+    }
+  }
+}

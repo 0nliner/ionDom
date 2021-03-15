@@ -34,6 +34,10 @@ $text_color: #253B49;
       }
     }
   }
+
+  .content_block_wrapper:last-child {
+    border-bottom: none;
+  }
 }
 
 .namedCheckBox {
@@ -46,7 +50,8 @@ $text_color: #253B49;
   }
 
   .title::before {
-    content: "* ";
+      text-decoration-style: dotted;
+      text-decoration-color: #224156;
   }
 
   .checkPointWrapper {
@@ -173,4 +178,62 @@ $text_color: #253B49;
 
     }
   }
+}
+
+
+@media (max-width: 1300px) {
+  .delivery_calc {
+    width: calc(90% - 20px);
+    margin: 20px auto;
+  }
+
+  .services {
+    flex-direction: column;
+
+    .checkpoints {
+      flex-direction: column;
+
+      .namedCheckBox {
+        font-size: 15px;
+        margin-top: 15px;
+        justify-content: space-between;
+      }
+
+      .namedCheckBox:nth-child(3) {
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  .special {
+
+    .content {
+      flex-direction: column;
+
+      .col1 {
+        width: 100%;
+      }
+
+      .col2 {
+        width: 100%;
+        margin-left: 0;
+
+
+        .namedCheckBox {
+            justify-content: space-between;
+        }
+
+        .namedCheckBox:nth-child(1) {
+          margin-top: 25px;
+        }
+
+        .namedCheckBox:nth-child(3) {
+          margin-bottom: 15px;
+        }
+
+      }
+    }
+  }
+
+
 }

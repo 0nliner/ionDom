@@ -17,7 +17,7 @@ a {
 #header_desktop {
   display: grid;
   place-content: center;
-  height: 150px;
+  //height: 150px;
 
   border-top: 6px solid #1F5FBF;
   background-color: white;
@@ -28,17 +28,46 @@ a {
 
   .bottomNav {
     width: 100%;
+    display: flex;
+    place-items: center;
+    place-content: center;
+    //justify-content: space-around;
+
+    border-top: solid 1px #5396de;
 
     .BottomNavItem {
       display: grid;
       place-content: center;
+      flex-grow: 2;
+      padding: 10px 20px;
+      border-bottom: 2px solid #5396de;
+      color: #1F5FBF;
+      margin: 5px 3px;
+      max-width: 200px;
+      height: 30px;
+    }
+
+    .BottomNavItemSelected {
+      display: grid;
+      place-content: center;
+      flex-grow: 2;
+      padding: 10px 20px;
+      margin: 5px 3px;
+      max-width: 200px;
+      height: 30px;
+
+      color: white;
+      background-color: #1F5FBF;
+      border: none;
     }
   }
 }
 
 
 
+
 #header_desktop > .wrapper {
+  margin-top: 15px;
   width: calc(100vw - 20vw);
 
   background-color: white;
