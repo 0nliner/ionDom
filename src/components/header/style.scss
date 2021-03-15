@@ -246,6 +246,8 @@ header {
 
 #header_mobile .top_bar {
   display: flex;
+  position: relative;
+
   height: 60px;
 
   background-color: #FFFFFF;
@@ -255,9 +257,37 @@ header {
   display: flex;
   place-content: center;
   justify-content: center;
-  padding: 10px;
+  //padding: 10px;
 
   background-color: rgba(255, 255, 255, 0.7);
+
+  .market_btn {
+    display: flex;
+    width: 50%;
+    height: 40px;
+    //margin: 10px 0;
+
+    place-items: center;
+    place-content: center;
+    }
+
+  .current_place {
+    display: flex;
+
+    width: 50%;
+    height: 40px;
+
+    place-items: center;
+    place-content: center;
+    //margin: 10px 0;
+
+    background: #FFFFFF;
+
+    border: 1px solid #1F5FBF;
+    box-sizing: border-box;
+    border-radius: 3px 3px 0 0;
+  }
+
 }
 
 
@@ -276,8 +306,12 @@ header {
 }
 
 
-#header_mobile > .left {
-  width: 20%;
+#header_mobile {
+  .left {
+    width: 20%;
+    position: absolute;
+    left: 0;
+  }
 }
 
 #header_mobile .menu {
@@ -327,14 +361,18 @@ header {
 
 #header_mobile .middle {
   display: grid;
+
   width: 100%;
   place-content: center;
 }
 
 #header_mobile .right {
-  position: relative;
-  left: -20px;
+  position: absolute;
+
+  height: 100%;
   width: 20%;
+
+  right: -20px;
 }
 
 header {
@@ -393,92 +431,6 @@ header {
 
   #content_block_8 img {
     width: 100%;
-  }
-
-
-  #footer_logo {
-    display: block;
-    margin: auto;
-  }
-
-  footer .cols {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    /*place-content: center;*/
-    flex-wrap: wrap;
-  }
-
-  .card button {
-    width: 100%;
-    border-radius: 100px !important;
-  }
-
-  footer .col {
-    display: flex;
-    flex-direction: column;
-
-    width: 100%;
-    margin: 10px 0;
-
-    border-bottom: solid 1px #5396de;
-    color: white;
-  }
-
-  footer .col h2 {
-    text-align: center;
-  }
-
-  footer .wrapper {
-    width: 100%;
-  }
-
-  footer .top_bar {
-    position: relative;
-    display: grid;
-
-    place-content: center;
-  }
-
-  footer .arrow {
-    position: absolute;
-
-    right: 20px;
-    top: 30px;
-
-    /*  для анимации поворота стрелки  */
-    transition: transform 0.5s;
-  }
-
-  footer .col .content {
-    display: none;
-    place-content: center;
-    margin-bottom: 20px;
-  }
-
-  #notification_subscription img {
-    position: absolute;
-
-    top: 0;
-    right: 0;
-  }
-
-  #notification_subscription input {
-    width: 100%;
-  }
-
-  #contacts {
-    border: none;
-  }
-
-  #notification {
-    width: 75vw;
-    margin: auto;
-  }
-
-  #social_networks {
-    display: flex;
-    place-content: center;
   }
 
   .cards {

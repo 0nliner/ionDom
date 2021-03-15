@@ -102,7 +102,7 @@ footer hr {
     position: absolute;
 
     right: 20px;
-    top: 30px;
+    //top: 30px;
 
     /*  для анимации поворота стрелки  */
     transition: transform 0.5s;
@@ -148,6 +148,13 @@ footer hr {
     left: 20px;
   }
 
+  footer {
+    .dropdown {
+      justify-content: space-around;
+      height: 40px;
+    }
+  }
+
   footer .cols {
     display: flex;
     justify-content: space-between;
@@ -172,10 +179,19 @@ footer hr {
 /* для экранов с шириной экрана не больше 1000px*/
 /*@media (max-width: 1250px) {  */
 @media (max-width: 1250px) and (min-width: 840px) {
+
   #footer_logo {
     position: relative;
     left: 20px;
   }
+
+  footer {
+    .dropdown {
+      justify-content: space-around;
+      height: 40px;
+    }
+  }
+
 
   footer .cols {
     display: flex;

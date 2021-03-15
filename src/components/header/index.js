@@ -171,12 +171,17 @@ function Header () {
                     </div>
                 </div>
                 <nav>
-                    <div className="menu_bar_container">
-                        <div/>
-                        <div/>
-                        <div/>
+                    <div className={"market_btn"}>
+                        <div className="menu_bar_container">
+                            <div/>
+                            <div/>
+                            <div/>
+                        </div>
+                        Магазин
                     </div>
-                    Магазин
+                    <div className={"current_place"}>
+                        {currentNavEl}
+                    </div>
                 </nav>
 
                 <div className="site_menu" id="site_menu">
