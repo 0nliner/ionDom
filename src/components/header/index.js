@@ -11,8 +11,7 @@ import IonDom from "../../static/icons/Iон ом.svg";
 import Group145 from "../../static/icons/Group 145.svg";
 import Group96 from "../../static/icons/Group 96.svg";
 import arrow15 from "../../static/icons/Arrow 15.svg";
-
-
+import starLineSVG from "../../static/icons/starLine.svg";
 
 
 
@@ -93,6 +92,14 @@ function Header () {
     }
 
 
+    function FavoritesBtn (props) {
+        return (
+            <div className={"favorites"}>
+                <img src={starLineSVG}/>
+            </div>
+        );
+    }
+
     return (
         <div>
             <header id="header_desktop">
@@ -112,6 +119,8 @@ function Header () {
                             <input id="search_field" placeholder="Что ищем ?" alt="иконка поиска"/>
                             <button id="search_btn">Найти</button>
                         </div>
+
+                        <FavoritesBtn/>
                         <div className="basket_container">
                             <img alt="фотография не загружена" className="basket"
                                  src={vector20}/>

@@ -33,7 +33,7 @@ a {
     place-content: center;
     //justify-content: space-around;
 
-    border-top: solid 1px #5396de;
+    border-top: solid 1px #d8e0ea;
 
     .BottomNavItem {
       display: grid;
@@ -77,7 +77,7 @@ a {
 #top_bar {
   display: flex;
   height: 40px;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 #top_bar > * {
@@ -129,6 +129,16 @@ a {
   border: 1px solid #1F5FBF;
   box-sizing: border-box;
   border-radius: 0;
+}
+
+.favorites {
+  height: 50px;
+  width: 50px;
+
+  display: grid;
+  place-content: center;
+
+
 }
 
 /*video_surveillance_system*/

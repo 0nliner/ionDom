@@ -14,7 +14,7 @@ import starSVGIcon from "../../static/icons/start.svg";
 import {NamedSection} from "../NamedSection";
 
 
-const useStyles = makeStyles((theme) => ({
+const RecommendationsStyles = makeStyles((theme) => ({
     root: {
         width: '100%',
     },
@@ -154,9 +154,8 @@ const useStyles = makeStyles((theme) => ({
     }
 }));
 
-
 function Recommendations (props) {
-    const classes = useStyles();
+    const classes = RecommendationsStyles();
     const [expanded, setExpanded] = React.useState(false);
 
     let categories = [
