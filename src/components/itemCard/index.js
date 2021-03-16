@@ -1,15 +1,18 @@
 import styles from "./style.module.scss"
+import {NamedSection} from "../NamedSection";
 
 
 function ItemsBlock() {
     const list1 = ["Детектор движения", "Удаленный просмотр", "Запись звука", "Умная ИК-подсветка", "Ночная сьемка", "Уличное"]
 
     return (
-        <div className={styles.itemsBlock}>
-            <ItemBlock headtext="Комплект Стандарт на 18 камер" name="Стандарт" kitPrice="₽ 19 000" servicePrice="₽ 9 999" list={list1} />
-            <ItemBlock headtext="Комплект Стандарт на 18 камер" name="Стандарт" kitPrice="₽ 19 000" servicePrice="₽ 9 999" list={list1} />
-            <ItemBlock headtext="Комплект Стандарт на 18 камер" name="Стандарт" kitPrice="₽ 19 000" servicePrice="₽ 9 999" list={list1} />
-        </div>
+        <NamedSection>
+            <div className={styles.itemsBlock}>
+                <ItemBlock headtext="Комплект Стандарт на 18 камер" name="Стандарт" kitPrice="₽ 19 000" servicePrice="₽ 9 999" list={list1} />
+                <ItemBlock headtext="Комплект Стандарт на 18 камер" name="Стандарт" kitPrice="₽ 19 000" servicePrice="₽ 9 999" list={list1} />
+                <ItemBlock headtext="Комплект Стандарт на 18 камер" name="Стандарт" kitPrice="₽ 19 000" servicePrice="₽ 9 999" list={list1} />
+            </div>
+        </NamedSection>
     )
 }
 

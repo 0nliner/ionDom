@@ -11,14 +11,15 @@ import {ItemsBlock} from "../../components/itemCard";
 import {Starthelp} from "../../components/Starthelp";
 import AdditionalOptions from "../../components/additionalOptions";
 import {SetupOptions} from "../../components/SetupOptions";
+import {Recommendations} from "../../components/recomendation";
 import {ProjectsExamples} from "../../components/CardsScrollView/projectExamples";
 import {Reviews} from "../../components/CardsScrollView/reviews";
 import {Certificates} from "../../components/certificates";
 import {Partners} from "../../components/partners";
 import {Footer} from "../../components/footer";
 import {StartHelpUnderrow} from "../../components/startHelpUnderrow";
-import {FiveReasons} from "../../components/FiveReasons";
 
+import {FiveReasons} from "../../components/FiveReasons";
 import "./style.scss";
 
 
@@ -39,7 +40,7 @@ function VideoWatchingPage () {
                 <ItemsBlock/>
                 <SetupOptions/>
                 <AdditionalOptions/>
-                ...
+                <Recommendations/>
                 <ProjectsExamples/>
                 <Reviews/>
                 <Certificates/>

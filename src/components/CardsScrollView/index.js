@@ -1,7 +1,10 @@
+import react from "react";
+
 import "./style.scss";
 
 import leftArrow from "../../static/icons/Arrow 15.svg";
 import rightArrow from "../../static/icons/Arrow 16.svg";
+import {NamedSection} from "../NamedSection";
 
 
 
@@ -35,11 +38,13 @@ function Card (props) {
 function CardsScrollView(props) {
     // props.title
     // props.children
+    let [rerenderTime, setRerenderTime] = react.useState(Date.now());
+
 
     function ScrollLeft (props) {
         return (
             <div className={"scroll ScrollLeft"}>
-                <img/>
+                <img src={leftArrow}/>
             </div>
         );
     }
@@ -47,37 +52,39 @@ function CardsScrollView(props) {
     function ScrollRight (props) {
         return (
             <div className={"scroll ScrollRight"}>
-                <img/>
+                <img src={rightArrow}/>
             </div>
         );
     }
 
     return (
-        <div className={"CardsScrollViewWrapper"}>
-            <div className={"top_bar"}>
-                <h2>
-                    {props.title}
-                </h2>
+        <NamedSection>
+            <div className={"CardsScrollViewWrapper"}>
+                <div className={"top_bar"}>
+                    <h2>
+                        {props.title}
+                    </h2>
 
-                <nav>
-                    <a href="#" className={"showAll"}>
-                        Показать все
-                    </a>
+                    <nav>
+                        <a href="#" className={"showAll"}>
+                            Показать все
+                        </a>
 
-                    <img className={"left_arrow"} src={leftArrow}/>
-                    <img className={"right_arrow"} src={rightArrow}/>
+                        <img className={"left_arrow"} src={leftArrow}/>
+                        <img className={"right_arrow"} src={rightArrow}/>
 
-                </nav>
+                    </nav>
 
+                </div>
+
+                <div className={"CardsScrollView"}>
+                    <ScrollLeft/>
+                    <ScrollRight/>
+
+                    {props.children.slice(0, props.children.length >= 3 ? 3 : props.children.length )}
+                </div>
             </div>
-
-            <div className={"CardsScrollView"}>
-                <ScrollLeft/>
-                <ScrollRight/>
-
-                {props.children}
-            </div>
-        </div>
+        </NamedSection>
     );
 }
 

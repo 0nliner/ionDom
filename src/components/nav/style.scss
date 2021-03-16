@@ -85,6 +85,10 @@ $white: white;
         color: $white;
         border-bottom: solid 1px white;
 
+        .title {
+          position: relative;
+          left: -10px;
+        }
 
         .dropdown_content {
 
